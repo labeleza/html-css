@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <style>
+        abbr {
+            text-decoration: underline;
+            text-decoration-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+
+    <h2>Código-fonte / Pré-formatação / Tag: pre + code</h2>
+    <p>O comando <code>document.getElementById('Teste')</code> é escrito em linguagem JavaScript.</p>
+
+    <pre>
+        <code>
+    num = int(input("Informe um número: "))
+    if num % 2 == 0:
+        print(f"O número {num} é par.")
+    else:
+        print(f"O número {num} é ímpar.")
+        </code>
+    </pre>
+
+    <h2>Citações simples / Tag: q</h2>
+    <p>Como diria o pai de um amigo: <q cite="https://paidoamigodogustavoguanabara.com">O computador é um burro muito rápido.</q></p>
+
+    <h2>Citações completas / Tag: blockquote</h2>
+    <p>Segundo <strong><em>Maúricio Samy Silva</em></strong> no seu livro <strong>Fundamentos de HTML5 e CSS3</strong>:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=0">
+        Mesmo sem conhecimento prévio, com este livro o leitor será capaz de:
+        Criar um código totalmente semântico empregando os elementos da linguagem HTML5.
+        Usar os atributos da linguagem HTML5 para criar elementos gráficos ricos no desenvolvimento de aplicações web.
+    </blockquote>
+
+    <h2>Abreviações / Tag: abbr</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e <abbr title="JavaScript">JS</abbr> no site do <strong>Curso em Vídeo</strong> com o professor <strong><em>Gustavo Guanabara</em></strong>.</p>
+
+    <h2>Texto Invertido / Tag: bdo</h2>
+    <p><bdo dir="rtl">Estou aprendendo a programar!</bdo></p>
+</body>
+</html>

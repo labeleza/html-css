@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    * {
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    li {
+      min-width: 5rem;
+    }
+
+    ul li div > a {
+      display: none;
+    }
+
+    ul > .films:hover div a {
+      display: flex;
+      background: red;
+      text-transform: uppercase;
+    }
+
+    ul > .films:hover div a:first-child {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+    <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li class="films">
+        <a href="">Films</a>
+        <div>
+          <a href="https://torrentpirata.com/comedia/" target="_blank">Comedy</a>
+          <a href="">Action</a>
+          <a href="">Horror</a>
+        </div>
+      </li>
+      <li>
+        <a href="">Series</a>
+      </li>
+  </ul>
+</body>
+</html>

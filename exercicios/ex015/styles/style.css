@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+  background: lightsteelblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem; 
+}
+
+h1 {
+  color: darkblue;
+  background: lightskyblue;
+}
+
+h2 {
+  color: #fff;
+  background: darkblue;
+}
+
+p::selection {
+  color: rgba(0, 0, 0, 0.856);
+  text-align: justify;
+  background: lightskyblue;
+}
