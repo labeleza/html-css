@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+
+  <style>
+    * {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: monospace;
+      font-size: 1rem;
+    }
+
+    body {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+      padding: 1rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      max-width: 768px;
+    }
+
+    caption {
+      background-color: rgb(227, 201, 252);
+      font-size: 3rem;
+      margin-bottom: 0.1rem;
+      text-transform: uppercase;
+    }
+
+    th, tr, td {
+      border: 1px solid black;
+      height: 10vh;
+      width: 100vw;
+      padding: 0.5rem;
+    }
+
+    th, tfoot td {
+      background-color: #c7c7c7;
+      color: #fff;
+      font-weight: bolder;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+
+    td {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #c7c;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    ANATOMIA PARA TABELAS GRANDES
+      TABLE
+        THEAD
+          TH, TR, TD
+        TBODY
+          TH, TR, TD
+        TFOOT
+          TH, TR, TD
+   -->
+
+  <table>
+    <caption>Minha Tabela</caption>
+    <thead>
+      <th scope="col">Melhores Jogos</th>
+      <th scope="col">Piores Jogos</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Conquer Online 3.0</td>
+        <td>League of Legends</td>
+      </tr>
+      <tr>
+        <td>Free Fire</td>
+        <td>Valorant</td>
+      </tr>
+      <tr>
+        <td>Resident Evil 4</td>
+        <td>Minecraft</td>
+      </tr>
+      <tr>
+        <td>Black PS2</td>
+        <td>FiveM</td>
+      </tr>
+      <tr>
+        <td>Dota 1</td>
+        <td>Fortnite</td>
+      </tr>
+      <tr>
+        <td>Counter Strike 1.6</td>
+        <td>CS - Global Offensive</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Total de Jogos</th>
+        <td><strong>12 Jogos</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
