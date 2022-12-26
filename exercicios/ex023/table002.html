@@ -19,14 +19,15 @@
     body {
       display: grid;
       place-content: center;
-      height: 100vh;
-      padding: 1rem;
+      min-width: 100vh;
+      padding: 0rem;
     }
 
     table {
       border-collapse: collapse;
       text-align: center;
       max-width: 768px;
+      position: relative;
     }
 
     caption {
@@ -34,6 +35,12 @@
       font-size: 3rem;
       margin-bottom: 0.1rem;
       text-transform: uppercase;
+    }
+
+    thead th {
+      position: sticky;
+      position: -moz-sticky;
+      top: -1px;
     }
 
     th, tr, td {
@@ -56,7 +63,7 @@
       text-align: center;
     }
 
-    tr:nth-child(odd) {
+    tbody > tr:nth-child(odd) {
       background-color: #c7c;
     }
   </style>
@@ -103,6 +110,10 @@
       <tr>
         <td>Counter Strike 1.6</td>
         <td>CS - Global Offensive</td>
+      </tr>
+      <tr>
+        <td>Bleach Immortal Soul</td>
+        <td>Ragnarok</td>
       </tr>
     </tbody>
     <tfoot>
