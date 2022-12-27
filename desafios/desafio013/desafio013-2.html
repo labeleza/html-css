@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela 02</title>
+
+  <style>
+    table {
+      border-collapse: separate;
+      width: 100%;
+      max-width: 80vw;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    td, tr {
+      border: 1px solid darkblue;
+      background-color: coral;
+      padding: 1rem;
+    }
+
+    table tbody tr td[colspan] {
+      background-color: orange;
+    }
+
+    table tbody tr td[rowspan] {
+      background-color: orangered;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
+      </tr>
+      <tr>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>J</td>
+        <td>L</td>
+        <td>M</td>
+      </tr>
+      <tr>
+        <td colspan="4">N</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

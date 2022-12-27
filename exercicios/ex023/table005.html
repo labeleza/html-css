@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            vertical-align: middle;
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        caption {
+            text-transform: uppercase;
+            font-weight: bolder;
+            background-color: #c7c7c7;
+            padding: 1rem;
+            margin-bottom: -1px;
+            border: 1px solid black;
+        }
+
+        th {
+            text-transform: uppercase;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 1rem;
+        }
+
+        col:nth-child(odd) {
+            background: aqua;
+        }
+        col:nth-child(even) {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col>
+            <col span="2">
+            <col>
+        </colgroup>
+        <thead>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Cozinheiro</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>40</td>
+                <td>Caminhoneiro</td>
+            </tr>
+            <tr>
+                <td>Marta</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Júlia</td>
+                <td>F</td>
+                <td>60</td>
+                <td>Faxineira</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
