@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background: #c7c7c7;
+            padding: 1rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        iframe {
+            border: 3px solid orange;
+            width: 500px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Testando o uso de iframes 
+    </h1>
+
+    <p>Acessando o site do Curso em Vídeo para aprender a programar.</p>
+    <div>
+        <iframe width="400" height="300" src="https://www.cursoemvideo.com/" frameborder="0">
+            <a href="https://www.cursoemvideo.com">Acesse o site!</a>
+        </iframe>
+    </div> 
+
+    <p>A página do Projeto Cordel do <a href="https://github.com/labeleza">Labeleza</a> é muito legal.</p>
+    <div>
+        <iframe width="400" height="300" src="https://labeleza.github.io/projeto-cordel/" frameborder="0">
+            <a href="https://labeleza.github.io/projeto-cordel">Acesse o Projeto!</a>
+        </iframe>
+    </div>
+</body>
+</html>
