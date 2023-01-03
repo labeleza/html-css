@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        fieldset {
+            max-width: 500px;
+        }
+         
+        input {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <fieldset>
+        <legend>DADOS DO ALUNO</legend>
+        <form action="" method="get" autocomplete="on">
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="25" placeholder="Nome Completo" autocomplete="name">
+            </div>
+            
+            <div>
+                <label for="imedia">Média</label>
+                <input
+                type="number"
+                name="media"
+                id="imedia" required
+                min="0"
+                max="10"
+                step="0.1"
+                placeholder="0 a 10"
+                value="5">
+            </div>
+
+            <div>
+                <label for="imes">Período Letivo</label>
+                <input
+                type="month"
+                name="mes"
+                id="imes"
+                required
+                value="2023-01">
+            </div>
+
+            <div>
+                <label for="idia">Dia da Prova</label>
+                <input
+                type="date"
+                name="dia"
+                id="idia"
+                required
+                value="2023-01-01">
+            </div>
+
+            <div>
+                <label for="ihora">Hora da Prova</label>
+                <input 
+                type="time" 
+                name="hora" 
+                id="ihora"
+                required
+                value="13:00">
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
