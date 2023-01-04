@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        div {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário com Telefone e Email</h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="#" method="get" autocomplete="on">
+            <!-- Estudar mais sobre RegEx / Expressões Regulares -->
+
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="20" placeholder="Ex: Maria José">
+            </div>
+
+            <div>
+                <label for="iemail">Email</label>
+                <input autocomplete="email" type="email" name="email" id="iemail" required placeholder="example@example.com">
+            </div>
+            <div>
+                <label for="itel">Tefenone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
