@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        div {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <h2>Datalist, Select, Textarea</h2>
+
+    <form action="#" method="POST">
+        <div id="tag-select">
+            <label for="iest">Estado</label>
+            <select name="es" id="iest">
+                <option disabled selected>-- Escolha --</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernanbuco</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div id="tag-datalis">
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="proflist">
+            
+            <datalist id="proflist">
+                <option>Cozinheiro</option>
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </div>
+
+        <div id="tag-datalist">
+            <label for="imelhor-jogo">Melhor Jogo</label>
+            <input type="text" name="melhor-jogo" id="imelhor-jogo" list="melhores-jogos">
+
+            <datalist id="melhores-jogos">
+                <option>Resident Evil 4</option>
+                <option>Conquer Online 3.0</option>
+                <option>Dota 1</option>
+                <option>Black PS2</option>
+            </datalist>
+        </div>
+
+        <div id="tag-textarea">
+            <label for="imsg">Digite uma mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="5" placeholder="Sua mensagem"></textarea>
+        </div>
+
+        <div id="tag-button">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
