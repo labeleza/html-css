@@ -42,10 +42,12 @@ header h1 {
 }
 
 #burguer {
-    padding: .5rem 100%;
-    cursor: pointer;
     background-color: black;
     color: #fff;
+    cursor: pointer;
+    padding: .5rem;
+    width: 100vw;
+    text-align: center;
 }
 
 #menu {
