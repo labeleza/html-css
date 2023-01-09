@@ -36,7 +36,10 @@ header h1 {
 }
 
 #burguer {
+    padding: .5rem 100%;
     cursor: pointer;
+    background-color: black;
+    color: #fff;
 }
 
 #menu {
@@ -80,4 +83,8 @@ main {
 article h2, article p {
     margin: 1rem 0;
     text-indent: 1rem;
+}
+
+article h2 {
+    text-indent: 0;
 }
