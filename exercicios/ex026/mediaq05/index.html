@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/style.css" media="all">
     <link rel="stylesheet" href="styles/tablet.css">
 </head>
-<body onresize="changeWidth()">
+<body onresize="changedWidth()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -56,11 +56,11 @@
     </main>
 
     <script>
-        function changeWidth() {
-            if (window.innerWidth === '768') {
-                changeWidth.style.display = 'block'
+        function changedWidth() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
             } else {
-                changeWidth.style.display = 'none'
+                menu.style.display = 'none'
             }
         }
 
